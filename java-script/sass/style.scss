@@ -1,0 +1,71 @@
+.main-div {
+    margin: auto;
+    margin-top: auto;
+    height: auto;
+    width: 400px;
+    border: 1px solid gray;
+    margin-top: 100px;
+    border-radius: 7px;
+    background: gray;
+    padding: 20px;
+
+    .answer {
+        background: white;
+        font-size: 35px;
+        margin: 0;
+        text-align: center;
+        width: 98%;
+    }
+
+    input {
+        height: 34px;
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .button-1-10 {
+        width: 50%;
+        padding-top: 8px;
+        float: left;
+
+        button {
+            height: auto;
+            font-size: 17px;
+            text-align: center;
+            padding: 9px 23px;
+        }
+    }
+
+    .oprater {
+        width: 50%;
+        float: left;
+        padding-top: 8px;
+
+        button {
+            height: auto;
+            font-size: 28px;
+            text-align: center;
+            padding: 7px 7px;
+            display: block;
+            width: 50%;
+            float: left;
+        }
+    }
+
+    .clear-both {
+        clear: both;
+
+    }
+
+
+}
+
+.toal{
+   
+    font-size: 35px;
+    text-align: center;
+    width: auto;
+    margin: auto;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>java script</title>
+    <link rel="stylesheet" href="sass/css/style.css">
+</head>
+
+<body>
+
+
+    <div class="main-div">
+
+
+        <form method="GET">
+
+            <p id="demo" class="toal"></p>
+            <input type="text" class="answer" value="">
+            <div class="button-1-10">
+                <button type="button" class="click" value="1">1</button>
+                <button type="button" class="click" value="2">2</button>
+                <button type="button" class="click" value="3">3</button>
+                <button type="button" class="click" value="4">4</button>
+                <button type="button" class="click" value="5">5</button>
+                <button type="button" class="click" value="6">6</button>
+                <button type="button" class="click" value="7">7</button>
+                <button type="button" class="click" value="8">8</button>
+                <button type="button" class="click" value="9">9</button>
+                <button type="button" class="click" value="0">0</button>
+            </div>
+            <div class="oprater">
+                <button type="reset" class="click" value="reset">Clear</button>
+                <button type="button" class="click" value="+">+</button>
+                <button type="button" class="click" value="-">-</button>
+                <button type="button" class="click" value="/">/</button>
+                <button type="button" class="click" value="*">*</button>
+                <button type="button" id="total" value="=">=</button>
+            </div>
+            <div class="clear-both"></div>
+
+        </form>
+    </div>
+
+
+
+
+
+    <script>
+        var btn = document.getElementsByClassName('click');
+        btns = Array.from(btn);
+        var field = document.getElementsByClassName('answer');
+        var total = document.getElementById('total');
+        btns.forEach(function (button, index) {
+            button.addEventListener('click', function () {
+                field[0].value += button.value;
+                total.addEventListener('click', function () {
+                    var nn = (eval(field[0].value));
+                    document.getElementById("demo").innerHTML = "total =" + nn;
+                });
+
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
